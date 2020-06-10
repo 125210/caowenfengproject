@@ -1,0 +1,10 @@
+   $(".nav li a").click(function(){
+     $(this).addClass("active").parents("li").siblings().find("a").removeClass("active");
+   });
+   window.addEventListener('load',function(){
+     var $navBox = document.getElementById('navBox'),
+         $ul = $navBox.querySelector('ul'),
+         liArray = $navBox.querySelectorAll('li'),
+         liLength = $navBox.querySelectorAll('li').length;10     $ul.style.width = (liArray[0].clientWidth + 10)*liLength +"px";
+   var carousel=new iScroll("carousel",{hScrollbar:false, vScrollbar:false, vScroll: false});
+   });
